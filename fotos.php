@@ -4,6 +4,13 @@
 	<title>Mi Koala</title>
 </head>
 <body>
-<img src="Fotos/Koala.jpg">
+<?php 
+	$nombre = $_POST["nombreArchivo"];
+
+echo "<img src=".$nombre.">";
+
+
+?>
+<form action="index.html" method="POST"><input type="submit" name="volver" value="Ir a la pagina anterior"></form>
 </body>
 </html>
